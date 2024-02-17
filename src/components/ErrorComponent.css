@@ -1,0 +1,9 @@
+.error {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 5px;color: red;
+}
+
+#year-error {
+    right: 3rem;
+}

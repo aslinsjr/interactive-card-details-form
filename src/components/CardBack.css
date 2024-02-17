@@ -1,0 +1,17 @@
+.card-back {
+    position: absolute;
+    width: 447px;
+    height: 245px;
+    background-image: url(/public/bg-card-back.png);
+    left: 14rem;
+    top: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    z-index: -1;
+}
+
+#cvc-number {
+    margin-right: 3rem;
+}
