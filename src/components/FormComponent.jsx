@@ -130,7 +130,7 @@ const FormComponent = () => {
       </label>
       <input id='submit-btn' type="submit" value="Confirm" onClick={(e) => submitInfos(e)}/>
     </form> : <div className='sucess-container'>
-      <img src="public/icon-complete.svg" alt="" />
+      <div className="success-image"></div>
       <h2>Thank you!</h2>
       <p>We've added your card details</p>
       <button onClick={() => window.location.reload()}>Continue</button>

@@ -87,8 +87,10 @@ input::placeholder {
     gap: 1rem;
 }
 
-.sucess-container img {
+.success-image {
     width: 80px;
+    height: 80px;
+    background-image: url(/public/icon-complete.svg);
 }
 
 .sucess-container h2 {
