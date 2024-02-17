@@ -81,6 +81,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 375px;
     padding: 1rem;
     margin-left: -2rem;
     gap: 1rem;
@@ -102,4 +103,5 @@ input::placeholder {
     cursor: pointer;
     width: 350px;
     height: 50px;
+    border-radius: 7px;
 }

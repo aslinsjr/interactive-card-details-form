@@ -22,6 +22,8 @@ const FormComponent = () => {
   const [cardExpYear, setCardExpYear] = useState("");
   const [cardCvc, setCardCvc] = useState("");
 
+  let x = 1;
+
   const validDigits = (text) => {
     return text.replace(/[^0-9]/g, "")
   }
@@ -50,16 +52,12 @@ const FormComponent = () => {
   const submitInfos = (e) => {
     e.preventDefault()
 
-    if(cardholderName === "" && cardNumber === "") {
-      
-    } else {
-      setName(cardholderName)
-      setNumber(cardNumber)
-      setMonth(cardExpMonth)
-      setYear(cardExpYear)
-      setCvc(cardCvc)
-    }
-    
+    setName(cardholderName)
+    setNumber(cardNumber)
+    setMonth(cardExpMonth)
+    setYear(cardExpYear)
+    setCvc(cardCvc)
+
 
     console.log("cardholdname " + cardholderName)
     console.log(name)
@@ -69,7 +67,7 @@ const FormComponent = () => {
   <div>
     <CardFront name={cardholderName} number={cardNumber} month={cardExpMonth} year={cardExpYear}/>
     <CardBack cvc={cardCvc} />
-    {name === "."  ? <form> 
+    {name === "." || name === "" || number === "." || number === "" || month === "." || month === "" || year === "." || year === "" || cvc === "." || cvc === "" ? <form> 
       <label className='large-input-container'>
         <span>Cardholder Name</span>
         <input 
@@ -135,9 +133,8 @@ const FormComponent = () => {
       <img src="public/icon-complete.svg" alt="" />
       <h2>Thank you!</h2>
       <p>We've added your card details</p>
-      <button onClick={() => setName(".")}>Continue</button>
+      <button onClick={() => window.location.reload()}>Continue</button>
     </div>}
-    {console.log(name)}
   </div>
   )
 }
