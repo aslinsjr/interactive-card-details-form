@@ -3,4 +3,13 @@
     height: 100vh;
     background-image: url(/public/bg-main-desktop.png);
     z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1100px) {
+    .background-component {
+        background-image: url(/public/bg-main-mobile.png);
+        height: 30vh;
+    }
 }

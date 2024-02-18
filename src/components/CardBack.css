@@ -1,7 +1,7 @@
 .card-back {
     position: absolute;
-    width: 447px;
-    height: 245px;
+    width: 28rem;
+    height: 15rem;
     background-image: url(/public/bg-card-back.png);
     left: 14rem;
     top: 19rem;
@@ -14,4 +14,20 @@
 
 #cvc-number {
     margin-right: 3rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .card-back {
+        width: 14rem;
+        height: 8rem;
+        background-size: cover;
+        top: 5rem;
+        left: 6.5rem;
+        top: 1rem;
+    }
+
+    #cvc-number {
+        margin-right: 1rem;
+        font-size: 0.6rem;
+    }
 }
